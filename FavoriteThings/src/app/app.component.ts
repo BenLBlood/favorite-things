@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AngularFirestore } from 'angularfire2/firestore';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,10 @@ export class AppComponent {
   title = 'Favorite Things';
   favoriteColor = 'pink';
   favoriteNumber = 0;
+
+  constructor(db: AngularFirestore) {
+
+  }
 
   setColor(selectedColor: string): void {
     console.log('You selected the color ' + selectedColor);
