@@ -6,11 +6,11 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyDhU56xdvYlarikzQsAjVu1uN7UFp0z9vQ",
-    authDomain: "bloodb-favorite-things.firebaseapp.com",
-    databaseURL: "https://bloodb-favorite-things.firebaseio.com",
-    projectId: "bloodb-favorite-things",
-    storageBucket: "bloodb-favorite-things.appspot.com",
-    messagingSenderId: "543039501988"
+    apiKey: "AIzaSyDPA3UTxqDcH1C5gGFVZ9LEt31PMaVCebE",
+    authDomain: "bblood-default.firebaseapp.com",
+    databaseURL: "https://bblood-default.firebaseio.com",
+    projectId: "bblood-default",
+    storageBucket: "bblood-default.appspot.com",
+    messagingSenderId: "747131466763"
   },
 };

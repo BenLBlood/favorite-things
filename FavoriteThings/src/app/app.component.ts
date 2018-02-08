@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
-import { AngularFirestore } from 'angularfire2/firestore';
+import { AngularFireDatabase } from 'angularfire2/database';
+import { filter } from 'rxjs/operator/filter';
+
+import * as firebase from 'firebase/app';
+
 
 @Component({
   selector: 'app-root',
@@ -11,17 +15,20 @@ export class AppComponent {
   favoriteColor = 'pink';
   favoriteNumber = 0;
 
-  constructor(db: AngularFirestore) {
+  constructor(db: AngularFireDatabase) {
 
   }
 
   setColor(selectedColor: string): void {
-    console.log('You selected the color ' + selectedColor);
-    this.favoriteColor = selectedColor;
+    firebase.database().ref().child('color').set(selectedColor);
   }
 
   updateColor(): void {
     console.log('TODO: Update the color');
+    firebase.database().ref().child('color').once('value',
+      (snapshot: firebase.database.DataSnapshot) => {
+        this.favoriteColor = snapshot.val(); 
+      })
   }
 
   setNumber(newNumber: number): void {
