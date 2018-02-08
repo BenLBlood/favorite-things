@@ -6,11 +6,11 @@
 export const environment = {
   production: false,
   firebaseConfig: {
-    apiKey: "AIzaSyDPA3UTxqDcH1C5gGFVZ9LEt31PMaVCebE",
-    authDomain: "bblood-default.firebaseapp.com",
-    databaseURL: "https://bblood-default.firebaseio.com",
-    projectId: "bblood-default",
-    storageBucket: "bblood-default.appspot.com",
-    messagingSenderId: "747131466763"
+    apiKey: 'AIzaSyDPA3UTxqDcH1C5gGFVZ9LEt31PMaVCebE',
+    authDomain: 'bblood-default.firebaseapp.com',
+    databaseURL: 'https://bblood-default.firebaseio.com',
+    projectId: 'bblood-default',
+    storageBucket: 'bblood-default.appspot.com',
+    messagingSenderId: '747131466763'
   },
 };
